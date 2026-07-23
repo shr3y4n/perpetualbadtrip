@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perpetual Bad Trip | Alternative Rock Band Kolkata</title>
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Perpetual Bad Trip | Alternative Rock Band Kolkata">
+  <meta name="description" content="Perpetual Bad Trip is an alternative rock band based in Kolkata blending Hindi rock, Bollywood rock and English alternative into loud, emotional live performances.">
+  <meta name="keywords" content="Perpetual Bad Trip, Alternative Rock, Kolkata Band, Shoegaze, Grunge, Hindi Rock, Bollywood Rock, English Rock, Kolkata Live Band">
+  <meta name="theme-color" content="#7B0000">
+
+  <!-- OpenGraph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://perpetualbadtrip.com/">
+  <meta property="og:title" content="Perpetual Bad Trip | Alternative Rock Band Kolkata">
+  <meta property="og:description" content="Atmospheric, dark, cinematic alternative rock from Kolkata. Experience the trip.">
+  <meta property="og:image" content="https://perpetualbadtrip.com/assets/images/members/debarghya_chanda.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://perpetualbadtrip.com/">
+  <meta property="twitter:title" content="Perpetual Bad Trip | Alternative Rock Band Kolkata">
+  <meta property="twitter:description" content="Atmospheric, dark, cinematic alternative rock from Kolkata. Experience the trip.">
+  <meta property="twitter:image" content="https://perpetualbadtrip.com/assets/images/members/debarghya_chanda.jpg">
+
+  <!-- Favicon & Web Manifest -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/mobile.css">
+</head>
+<body>
+
+  <!-- Background Overlays & Canvas -->
+  <canvas id="background-canvas"></canvas>
+  <div class="film-grain"></div>
+  <div class="vignette-overlay"></div>
+  <div class="spotlight-light"></div>
+
+  <!-- Glowing Custom Cursor -->
+  <div class="custom-cursor"></div>
+  <div class="custom-cursor-follower"></div>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header">
+    <a href="#" class="nav-brand" data-magnetic="true">PBT</a>
+    <div class="nav-actions">
+      <button id="audio-toggle-btn" class="audio-toggle-btn" data-magnetic="true" aria-label="Toggle Soundscape">
+        <div class="soundwave-bars">
+          <div class="soundwave-bar"></div>
+          <div class="soundwave-bar"></div>
+          <div class="soundwave-bar"></div>
+          <div class="soundwave-bar"></div>
+        </div>
+        <span class="audio-text">SOUND: OFF</span>
+      </button>
+      <a href="#booking" class="nav-book-link" data-magnetic="true">BOOK NOW</a>
+    </div>
+  </header>
+
+  <!-- Interactive Loading Screen -->
+  <div id="loading-screen">
+    <div class="intro-logo-container">
+      <h1 class="intro-logo">PERPETUAL BAD TRIP</h1>
+      <p class="intro-sublogo">ALTERNATIVE ROCK • KOLKATA</p>
+    </div>
+    <button id="enter-trip-btn" class="intro-enter-btn" data-magnetic="true">ENTER THE TRIP</button>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="hero-slideshow-container">
+        <div class="hero-slide active" style="background-image: url('assets/images/band_live_6.jpg');"></div>
+        <div class="hero-slide" style="background-image: url('assets/images/band_live_12.jpg');"></div>
+        <div class="hero-slide" style="background-image: url('assets/images/band_live_15.jpg');"></div>
+        <div class="hero-slide" style="background-image: url('assets/images/band_live_31.jpg');"></div>
+      </div>
+      <div class="hero-lighting-overlay"></div>
+
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="word">PERPETUAL</span>
+          <span class="word red-accent">BAD TRIP</span>
+        </h1>
+
+        <div class="hero-meta">
+          <div class="hero-location-tags">
+            <span class="hero-city">ALTERNATIVE ROCK • KOLKATA</span>
+            <span class="hero-subgenres">HINDI ROCK • BOLLYWOOD ROCK • ENGLISH ROCK</span>
+          </div>
+          <div class="hero-cta-group">
+            <a href="#videos" class="btn-hero btn-primary" data-magnetic="true">WATCH REELS</a>
+            <a href="https://www.instagram.com/perpetualbadtrip/" target="_blank" rel="noopener" class="btn-hero" data-magnetic="true">INSTAGRAM</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION (Kinetic Text) -->
+    <section class="about-section" id="about">
+      <div class="about-header-tag">01 // ABOUT</div>
+      <h2 class="about-statement" id="about-kinetic-statement">
+        Perpetual Bad Trip is an alternative rock band based in Kolkata blending Hindi rock, Bollywood rock and English alternative into loud, emotional live performances.
+      </h2>
+    </section>
+
+    <!-- LIVE GALLERY SECTION -->
+    <section class="gallery-section" id="gallery">
+      <div class="section-title-wrap">
+        <div>
+          <div class="about-header-tag">02 // LIVE ARCHIVES</div>
+          <h2 class="section-title">LIVE GALLERY</h2>
+        </div>
+        <span class="section-subtitle">CLICK PHOTO FOR FULLSCREEN LIGHTBOX</span>
+      </div>
+
+      <div class="gallery-grid" id="live-gallery-grid">
+        <!-- Dynamically populated by assets/js/gallery.js -->
+      </div>
+    </section>
+
+    <!-- LIGHTBOX MODAL -->
+    <div id="lightbox-modal">
+      <button class="lightbox-close" aria-label="Close Lightbox">&times;</button>
+      <button class="lightbox-prev" aria-label="Previous Image">&#10094;</button>
+      <button class="lightbox-next" aria-label="Next Image">&#10095;</button>
+      <div class="lightbox-content">
+        <img id="lightbox-img" class="lightbox-img" src="" alt="Live performance preview">
+        <div id="lightbox-caption" class="lightbox-caption"></div>
+      </div>
+    </div>
+
+    <!-- VIDEOS SECTION -->
+    <section class="videos-section" id="videos">
+      <div class="section-title-wrap">
+        <div>
+          <div class="about-header-tag">03 // VISUALS</div>
+          <h2 class="section-title">WATCH & REELS</h2>
+        </div>
+        <span class="section-subtitle">INSTAGRAM REELS & YOUTUBE COVERS</span>
+      </div>
+
+      <!-- INSTAGRAM REELS -->
+      <h3 style="font-family: var(--font-heading); font-size: 2.2rem; letter-spacing: 0.1em; margin-top: 2rem; color: var(--dark-red);">INSTAGRAM REELS</h3>
+      <div class="video-grid">
+        <div class="video-card">
+          <div class="video-embed-container reel-ratio">
+            <iframe src="https://www.instagram.com/p/DFEWWaNSm1K/embed" allowtransparency="true" allowfullscreen="true" frameborder="0" scrolling="no"></iframe>
+          </div>
+          <div class="video-info">
+            <div class="video-type-badge">INSTAGRAM REEL</div>
+            <h4 class="video-title">Live Performance Highlights</h4>
+          </div>
+        </div>
+
+        <div class="video-card">
+          <div class="video-embed-container reel-ratio">
+            <iframe src="https://www.instagram.com/perpetualbadtrip/embed" allowtransparency="true" allowfullscreen="true" frameborder="0" scrolling="no"></iframe>
+          </div>
+          <div class="video-info">
+            <div class="video-type-badge">INSTAGRAM REEL</div>
+            <h4 class="video-title">Band Rehearsal & Stage Energy</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- YOUTUBE COVERS -->
+      <h3 style="font-family: var(--font-heading); font-size: 2.2rem; letter-spacing: 0.1em; margin-top: 4rem; color: var(--dark-red);">YOUTUBE COVERS</h3>
+      <div class="video-grid">
+        <div class="video-card">
+          <div class="video-embed-container">
+            <iframe src="https://www.youtube-nocookie.com/embed?listType=user_uploads&list=perpetualbadtrip" title="Perpetual Bad Trip YouTube" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="video-info">
+            <div class="video-type-badge">YOUTUBE COVER</div>
+            <h4 class="video-title">Perpetual Bad Trip Channel Stream</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BAND MEMBERS SECTION -->
+    <section class="members-section" id="members">
+      <div class="section-title-wrap">
+        <div>
+          <div class="about-header-tag">04 // BAND MEMBERS</div>
+          <h2 class="section-title">THE BAND</h2>
+        </div>
+        <span class="section-subtitle">HOVER FOR GLITCH DISPLACEMENT</span>
+      </div>
+
+      <div class="member-card-wrapper">
+        <!-- 1. Shagnik Dutta -->
+        <article class="member-card">
+          <div class="member-portrait-container" data-magnetic="true">
+            <img src="assets/images/members/shagnik_dutta.jpg" alt="Shagnik Dutta - Drums" class="member-portrait" loading="lazy">
+          </div>
+          <div class="member-details">
+            <div class="member-number">01</div>
+            <h3 class="member-name glitch-text" data-text="SHAGNIK DUTTA">SHAGNIK DUTTA</h3>
+            <p class="member-role">DRUMS</p>
+            <a href="https://www.instagram.com/shagnikdutta18/" target="_blank" rel="noopener" class="member-social-link" data-magnetic="true">
+              INSTAGRAM ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- 2. Abhimanyu Dhar -->
+        <article class="member-card">
+          <div class="member-portrait-container" data-magnetic="true">
+            <img src="assets/images/members/abhimanyu_dhar.jpg" alt="Abhimanyu Dhar - Guitar / Vocals" class="member-portrait" loading="lazy">
+          </div>
+          <div class="member-details">
+            <div class="member-number">02</div>
+            <h3 class="member-name glitch-text" data-text="ABHIMANYU DHAR">ABHIMANYU DHAR</h3>
+            <p class="member-role">GUITAR / VOCALS</p>
+            <a href="https://www.instagram.com/a6h1m4nyu/" target="_blank" rel="noopener" class="member-social-link" data-magnetic="true">
+              INSTAGRAM ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- 3. Debjit Biswas -->
+        <article class="member-card">
+          <div class="member-portrait-container" data-magnetic="true">
+            <img src="assets/images/members/debjit_biswas.jpg" alt="Debjit Biswas - Bass" class="member-portrait" loading="lazy">
+          </div>
+          <div class="member-details">
+            <div class="member-number">03</div>
+            <h3 class="member-name glitch-text" data-text="DEBJIT BISWAS">DEBJIT BISWAS</h3>
+            <p class="member-role">BASS</p>
+            <a href="https://www.instagram.com/debjit.vst3/" target="_blank" rel="noopener" class="member-social-link" data-magnetic="true">
+              INSTAGRAM ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- 4. Debarghya Chanda -->
+        <article class="member-card">
+          <div class="member-portrait-container" data-magnetic="true">
+            <img src="assets/images/members/debarghya_chanda.jpg" alt="Debarghya Chanda - Vocals" class="member-portrait" loading="lazy">
+          </div>
+          <div class="member-details">
+            <div class="member-number">04</div>
+            <h3 class="member-name glitch-text" data-text="DEBARGHYA CHANDA">DEBARGHYA CHANDA</h3>
+            <p class="member-role">VOCALS</p>
+            <a href="https://www.instagram.com/hmm.its.debarghya/" target="_blank" rel="noopener" class="member-social-link" data-magnetic="true">
+              INSTAGRAM ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- 5. Debargha Chowdhury -->
+        <article class="member-card">
+          <div class="member-portrait-container" data-magnetic="true">
+            <img src="assets/images/members/debargha_chowdhury.jpg" alt="Debargha Chowdhury - Guitar" class="member-portrait" loading="lazy">
+          </div>
+          <div class="member-details">
+            <div class="member-number">05</div>
+            <h3 class="member-name glitch-text" data-text="DEBARGHA CHOWDHURY">DEBARGHA CHOWDHURY</h3>
+            <p class="member-role">GUITAR</p>
+            <a href="https://www.instagram.com/debargha_chowdhury7/" target="_blank" rel="noopener" class="member-social-link" data-magnetic="true">
+              INSTAGRAM ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- 6. Ayan Sylvester Gomes -->
+        <article class="member-card">
+          <div class="member-portrait-container" data-magnetic="true">
+            <img src="assets/images/members/ayan_sylvester_gomes.jpg" alt="Ayan Sylvester Gomes - Keyboard" class="member-portrait" loading="lazy">
+          </div>
+          <div class="member-details">
+            <div class="member-number">06</div>
+            <h3 class="member-name glitch-text" data-text="AYAN SYLVESTER GOMES">AYAN SYLVESTER GOMES</h3>
+            <p class="member-role">KEYBOARD</p>
+            <a href="https://www.instagram.com/ion.gomez_/" target="_blank" rel="noopener" class="member-social-link" data-magnetic="true">
+              INSTAGRAM ↗
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- BOOKING SECTION -->
+    <section class="booking-section" id="booking">
+      <div class="booking-container">
+        <div class="about-header-tag" style="justify-content: center;">05 // BOOKINGS</div>
+        <h2 class="booking-title">BOOK PERPETUAL BAD TRIP</h2>
+        
+        <p class="booking-contact-person">BOOKING CONTACT: SHAGNIK</p>
+        <a href="tel:6289305289" class="booking-phone" data-magnetic="true">6289305289</a>
+        <a href="mailto:perpetualbadtrip@gmail.com" class="booking-email" data-magnetic="true">perpetualbadtrip@gmail.com</a>
+
+        <div class="booking-actions">
+          <a href="tel:6289305289" class="btn-booking" data-magnetic="true">CALL NOW</a>
+          <a href="mailto:perpetualbadtrip@gmail.com" class="btn-booking" data-magnetic="true">EMAIL US</a>
+          <a href="https://www.instagram.com/perpetualbadtrip/" target="_blank" rel="noopener" class="btn-booking" data-magnetic="true">INSTAGRAM DM</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MAIN FOOTER -->
+  <footer class="main-footer">
+    <div class="footer-quote">"THE TRIP NEVER ENDS."</div>
+    <div class="footer-bottom">
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/perpetualbadtrip/" target="_blank" rel="noopener" data-magnetic="true">INSTAGRAM</a>
+        <a href="https://youtube.com/@perpetualbadtrip" target="_blank" rel="noopener" data-magnetic="true">YOUTUBE</a>
+      </div>
+      <div class="footer-copy">
+        &copy; 2026 PERPETUAL BAD TRIP. ALL RIGHTS RESERVED. KOLKATA, INDIA.
+      </div>
+    </div>
+  </footer>
+
+  <!-- CDN Libraries (Lenis Smooth Scroll & GSAP) -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Modular Scripts -->
+  <script src="assets/js/cursor.js"></script>
+  <script src="assets/js/background.js"></script>
+  <script src="assets/js/audio.js"></script>
+  <script src="assets/js/glitch.js"></script>
+  <script src="assets/js/member-hover.js"></script>
+  <script src="assets/js/gallery.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

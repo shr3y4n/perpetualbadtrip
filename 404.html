@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 | Perpetual Bad Trip</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/animations.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #090909;
+      color: #F4F4F4;
+      font-family: 'Inter', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      overflow: hidden;
+      text-align: center;
+    }
+    .error-code {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(8rem, 20vw, 18rem);
+      color: #7B0000;
+      line-height: 0.8;
+      letter-spacing: 0.05em;
+      text-shadow: 0 0 30px rgba(123, 0, 0, 0.6);
+    }
+    .error-msg {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2rem, 5vw, 4rem);
+      letter-spacing: 0.1em;
+      margin-top: 1rem;
+      color: #F4F4F4;
+      text-transform: uppercase;
+    }
+    .btn-return {
+      margin-top: 2.5rem;
+      display: inline-block;
+      padding: 1rem 2.5rem;
+      border: 1px solid #7B0000;
+      background: transparent;
+      color: #F4F4F4;
+      text-decoration: none;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.5rem;
+      letter-spacing: 0.15em;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .btn-return:hover {
+      background: #7B0000;
+      color: #FFF;
+      box-shadow: 0 0 20px rgba(123, 0, 0, 0.8);
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+  <div class="error-code">404</div>
+  <div class="error-msg">You got lost on the trip.</div>
+  <a href="/" class="btn-return">RETURN TO EXPERIENCE</a>
+</body>
+</html>

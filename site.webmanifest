@@ -1,0 +1,16 @@
+{
+  "name": "Perpetual Bad Trip",
+  "short_name": "PBT",
+  "description": "Perpetual Bad Trip is an alternative rock band based in Kolkata blending Hindi rock, Bollywood rock and English alternative into loud, emotional live performances.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#090909",
+  "theme_color": "#7B0000",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
