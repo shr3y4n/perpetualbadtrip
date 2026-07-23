@@ -943,3 +943,117 @@
   color: var(--text-muted);
   letter-spacing: 0.1em;
 }
+
+/* --------------------------------------------------------------------------
+   BRAND LOGO STYLES
+   -------------------------------------------------------------------------- */
+.nav-brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.brand-logo-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--dark-red);
+  box-shadow: 0 0 12px rgba(123, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-brand:hover .brand-logo-img {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 0 20px rgba(255, 26, 26, 0.9);
+}
+
+.intro-logo-badge {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--dark-red);
+  box-shadow: 0 0 35px rgba(255, 26, 26, 0.7);
+  margin: 0 auto 1.5rem auto;
+  display: block;
+  animation: logoPulseGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes logoPulseGlow {
+  0% {
+    box-shadow: 0 0 20px rgba(123, 0, 0, 0.5);
+    transform: scale(1);
+  }
+  100% {
+    box-shadow: 0 0 45px rgba(255, 26, 26, 0.9);
+    transform: scale(1.03);
+  }
+}
+
+.hero-logo-wrapper {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.hero-logo-badge {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--dark-red);
+  box-shadow: 0 0 25px rgba(123, 0, 0, 0.7);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hero-logo-badge:hover {
+  transform: scale(1.08) rotate(3deg);
+  box-shadow: 0 0 35px rgba(255, 26, 26, 0.9);
+}
+
+.booking-logo-badge {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--dark-red);
+  box-shadow: 0 0 35px rgba(255, 26, 26, 0.7);
+  margin: 0 auto 1.5rem auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.booking-logo-badge:hover {
+  transform: scale(1.05) rotate(5deg);
+}
+
+.booking-contact-card {
+  margin-bottom: 2rem;
+}
+
+.booking-contact-name {
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  color: var(--text-white);
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 20px rgba(255, 26, 26, 0.6);
+}
+
+.footer-logo-badge {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--dark-red);
+  box-shadow: 0 0 20px rgba(123, 0, 0, 0.6);
+  margin: 0 auto 1.5rem auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.footer-logo-badge:hover {
+  transform: scale(1.1);
+}
+
