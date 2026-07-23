@@ -107,8 +107,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #050505;
-  background: radial-gradient(circle at center, rgba(123, 0, 0, 0.25) 0%, rgba(5, 5, 5, 0.96) 80%), #050505;
+  background-color: #000;
   z-index: 10000;
   display: flex;
   flex-direction: column;
@@ -116,43 +115,12 @@
   align-items: center;
   cursor: pointer;
   transition: opacity 0.8s ease, visibility 0.8s ease;
-  overflow: hidden;
 }
 
 #loading-screen.hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-}
-
-.intro-bg-emblem {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: min(80vw, 720px);
-  height: min(80vw, 720px);
-  background-image: url('../images/logo_emblem.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.22;
-  mix-blend-mode: lighten;
-  filter: drop-shadow(0 0 50px rgba(255, 26, 26, 0.7));
-  pointer-events: none;
-  z-index: 1;
-  animation: introLogoPulse 6s ease-in-out infinite alternate;
-}
-
-@keyframes introLogoPulse {
-  0% {
-    opacity: 0.16;
-    transform: translate(-50%, -50%) scale(0.96);
-  }
-  100% {
-    opacity: 0.30;
-    transform: translate(-50%, -50%) scale(1.04);
-  }
 }
 
 .intro-logo-container {
@@ -975,68 +943,3 @@
   color: var(--text-muted);
   letter-spacing: 0.1em;
 }
-
-/* --------------------------------------------------------------------------
-   HERO BACKGROUND LOGO EMBLEM INTEGRATION
-   -------------------------------------------------------------------------- */
-.hero-slide.hero-logo-slide {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0;
-  filter: brightness(0.85) contrast(1.3) drop-shadow(0 0 40px rgba(255, 26, 26, 0.7));
-  mix-blend-mode: lighten;
-}
-
-.hero-slide.hero-logo-slide.active {
-  opacity: 0.35;
-  transform: scale(1.02);
-}
-
-.hero-bg-logo-watermark {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: min(75vw, 700px);
-  height: min(75vw, 700px);
-  background-image: url('../images/logo_emblem.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.18;
-  pointer-events: none;
-  z-index: 2;
-  mix-blend-mode: lighten;
-  filter: drop-shadow(0 0 60px rgba(255, 26, 26, 0.8));
-  animation: heroLogoBreathe 8s ease-in-out infinite alternate;
-}
-
-@keyframes heroLogoBreathe {
-  0% {
-    opacity: 0.12;
-    transform: translate(-50%, -50%) scale(0.95);
-  }
-  100% {
-    opacity: 0.24;
-    transform: translate(-50%, -50%) scale(1.04);
-  }
-}
-
-.booking-contact-card {
-  position: relative;
-  z-index: 2;
-  margin-bottom: 2rem;
-}
-
-.booking-contact-name {
-  font-family: var(--font-heading);
-  font-size: clamp(2.2rem, 5vw, 3.8rem);
-  color: var(--text-white);
-  letter-spacing: 0.15em;
-  margin-bottom: 0.5rem;
-  text-shadow: 0 0 20px rgba(255, 26, 26, 0.6);
-}
-
-
-
